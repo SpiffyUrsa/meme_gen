@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Meme Generator</title>
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+        <header id="header">
+            <h1 class="text-center bg-primary text-light py-3">Meme Generator</h1>
+        </header>
+        <section id="gen-fields" class="container">
+            <form id="meme-form">
+                <div class="form-group row">
+                    <label for="img-link" class="col-md-2 col-form-label"> Meme Image URL:</label>
+                    <input type="text" class="form-control col-md-10" id="img-link" name="imgUrl" placeholder="Meme Image URL" />
+                </div>
+                <div class="form-group row">
+                    <label for="top-text" class="col-md-2 col-form-label">Top Text:</label>
+                    <input type="text" class="form-control col-md-10" id="top-text" name="topText" placeholder="Top Text" />
+                </div>
+                <div class="form-group row">
+                    <label for="bottom-text" class="col-md-2 col-form-label">Bottom Text:</label>
+                    <input type="text" class="form-control col-md-10" id="bottom-text" name="bottomText" placeholder="Bottom Text" />
+                </div>
+                <div class="form-group">
+                    <button type='submit' class="btn btn-primary btn-block" id="submit-meme">Generate Meme</button>
+                </div>
+            </form>
+        </section>
+        <br>
+        <hr>
+        <section id="meme-display">
+            <h5 class="text-center">Click on a meme to remove it.</h5>
+            <h5 class="text-center">Screenshot a meme to save it.</h5>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.meme {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.meme:hover {
+    opacity: 50%;
+}
+
+/* I got the majority of the CSS for the meme text from an online resource. */
+
+.topText {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    font-family: impact, sans-serif;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.memeImg {
+    width: 100%;
+}
+
+.bottomText {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-family: impact, sans-serif;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
