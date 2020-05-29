@@ -1,13 +1,18 @@
 function handleSubmit (event) {
     event.preventDefault();
-    // Creating the div that holds the newly created meme.
-    let newMeme = document.createElement("div");
-    newMeme.classList.add("meme");
-    newMeme.classList.add("my-3");
     // Getting the input values of the form fields.
     let imgUrl = document.getElementById("img-link").value;
     let topText = document.getElementById("top-text").value;
     let bottomText = document.getElementById("bottom-text").value;
+    // Checking to see if the input image URL leads to an image. 
+    if (!/\.(jpeg|jpg|gif|png|exif|bmp)$/.test(imgUrl)) {
+        alert("Your image URL is not a jpeg, jpg, gif, png, exif, or bmp. Please try again.");
+        return;
+    }
+    // Creating the div that holds the newly created meme.
+    let newMeme = document.createElement("div");
+    newMeme.classList.add("meme");
+    newMeme.classList.add("my-3");
     // Creating the top text element and adding the input top text.
     let top = document.createElement("h1");
     top.classList.add("topText");
